@@ -8,7 +8,7 @@
     <meta name="description"
         content="Una carta digital de cumpleaños, con cariño, para alguien que está llegando a mi vida." />
 
-    <!-- Te amo Tailwind good -->
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -26,9 +26,15 @@
         }
     </script>
 
-
+    <!-- Favicon emoji -->
     <link rel="icon"
         href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%2790%27 font-size=%2790%27%3E%F0%9F%8E%89%3C/text%3E%3C/svg%3E">
+
+    <!-- Preconnect + Fuente Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -50,9 +56,10 @@
             <div class="text-center">
                 <div
                     class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-rose-100 text-rose-700 border border-rose-200">
-                    🎂 Pasatela bien chiquilla
+                    🎂 Pásatela bien, chiquilla
                 </div>
-                <h1 class="mt-4 font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
+                <h1
+                    class="mt-4 font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight animate-title">
                     <span
                         class="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 via-fuchsia-600 to-violet-600">
                         Feliz cumpleaños
@@ -69,16 +76,16 @@
             </div>
         </section>
 
-
         <section id="carta" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
             <div class="gradient-border rounded-2xl">
                 <article class="rounded-2xl bg-white p-6 sm:p-8">
                     <header class="flex items-center gap-3">
-                        <span class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-rose-100 text-rose-600 text-2xl">💌</span>                        <h2 class="text-xl sm:text-2xl font-semibold text-slate-800"></h2>
+                        <span
+                            class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-rose-100 text-rose-600 text-2xl">💌</span>
+                        <h2 class="text-xl sm:text-2xl font-semibold text-slate-800"></h2>
                     </header>
                     <div class="mt-5 space-y-4 leading-relaxed text-slate-700">
-                        <p>
-                            Hola, chiquilla…
+                        <p>Hola, chiquilla…</p>
                         <p>
                             Feliz cumpleaños. Espero que hoy te la pases bien. Solo quería aprovechar para decirte
                             lo mucho que me agradas y lo bonito que está siendo conocerte.
@@ -87,29 +94,31 @@
                             Siento que mi percepción de ti ha ido cambiando poco a poco, y para bien. Me da gusto cómo
                             cada
                             conversación me permites conocerte un poco aunque sea, y la neta espero que la tuya sobre mí
-                            también vaya cambiando igual para bien jajaja.
+                            también vaya cambiando igual, para bien jajaja.
+                        </p>
                         <p>
                             Todo esto ha sido medio sorpresivo, porque no pensé que se diera así, ni que de pronto nos
                             estuviéramos dando la oportunidad de toparnos más seguido. Aun así, me gusta, me nace, y
                             ojalá sigamos así.
                         </p>
-
+                        <p>
+                            Igual quisiera saber si tú te sientes cómoda o si tienes algún problema o disgusto, me lo
+                            cuentes; yo te escucho, chiquilla.
                         </p>
-
-                        Por ahora, solo disfruto el tiempo que compartimos, sea poco o mucho, incluso con la
-                        distancia.
+                        <p>
+                            Por ahora, solo disfruto el tiempo que compartimos, sea poco o mucho, incluso con la
+                            distancia.
                         </p>
                         <p class="text-right font-medium text-slate-800">Daisuki だいすき — Isa</p>
                     </div>
                 </article>
             </div>
             <p class="mt-3 text-xs text-slate-500 text-center">
-                No quiero correr; solo quiero disfrutar esta parte: conocerte, escucharte y descubrirte
-                poco a poco. Gracias por estar aqui.
+                No quiero correr, solo quiero disfrutar esta parte: conocerte, escucharte y descubrirte
+                poco a poco. Gracias por estar aquí.
             </p>
         </section>
 
-       
         <section id="momentos" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="text-center mb-8">
                 <h3 class="text-2xl sm:text-3xl font-semibold text-slate-900">Pequeños momentos</h3>
@@ -117,7 +126,6 @@
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Item 1 -->
                 <div class="card">
                     <div class="flex items-center gap-3">
                         <span
@@ -125,11 +133,10 @@
                         <h4 class="font-semibold text-slate-800">Estar cada que podemos</h4>
                     </div>
                     <p class="mt-3 text-sm text-slate-600">
-                        Me gusta que tratamos de hacernos tiempo para estar ahi chiquilla al menos asi yo lo siento.
+                        Me gusta que tratamos de hacernos tiempo para estar ahí, o al menos así yo lo siento.
                     </p>
                 </div>
 
-                <!-- Item 2 -->
                 <div class="card border-rose-200 hover:border-rose-300">
                     <div class="flex items-center gap-3">
                         <span
@@ -137,25 +144,71 @@
                         <h4 class="font-semibold text-slate-800">Detalles del día</h4>
                     </div>
                     <p class="mt-3 text-sm text-slate-600">
-                        Ese “Te marco?” o “Daisuki” que se siente tan bien.
+                        Ese “¿Te marco?” o “Daisuki” se sienten tan bien; me relaja, no sé, chiquilla.
                     </p>
                 </div>
 
-                <!-- Item 3 -->
                 <div class="card border-violet-200 hover:border-violet-300">
                     <div class="flex items-center gap-3">
                         <span
                             class="h-9 w-9 rounded-lg bg-amber-100 text-amber-600 inline-flex items-center justify-center">⭐</span>
-                        <h4 class="font-semibold text-slate-800">Dejarme conocerte mas</h4>
+                        <h4 class="font-semibold text-slate-800">Dejarme conocerte más</h4>
                     </div>
                     <p class="mt-3 text-sm text-slate-600">
-                        El simple hecho de que me muestres un poco tus gustos ya sea musicales, tus reels todos rancios jaja que me gustan, lo de los whatpads y demas cosas que me has ido mostrando.
+                        El simple hecho de que me muestres un poco tus gustos, ya sea musicales, tus reels todos rancios
+                        jaja, me gustan,
+                        lo de Wattpad y demás cosas que me has ido mostrando.
                     </p>
                 </div>
             </div>
         </section>
-<!--
 
+        <section id="carrusel" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="rounded-2xl p-6 sm:p-8 border border-violet-200 bg-white/80 backdrop-blur">
+                <div class="flex items-start justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="vinyl-icon inline-flex h-10 w-10 items-center justify-center rounded-full text-xl">💜</span>
+                        <div>
+                            <h3 class="text-xl sm:text-2xl font-semibold text-slate-900">Fotos que me gustan de ti
+                            </h3>
+                            <p class="text-sm text-slate-600 mt-0.5">pipipipi.</p>
+                        </div>
+                    </div>
+                    <span class="chip">Especial</span>
+                </div>
+
+                <div class="cfw mt-6" aria-roledescription="carousel">
+                    <div class="cfw-viewport" tabindex="0" aria-live="polite">
+                        <div class="cfw-track">
+                            <button class="cfw-item" data-index="1" aria-label="2">
+                                stickers/1.jpeg
+                            </button>
+                            <button class="cfw-item" data-index="2" aria-label="3">
+                                stickers/2.jpg
+                            </button>
+                            <button class="cfw-item" data-index="3" aria-label="4">
+                                stickers/3.jpg
+                            </button>
+                            <button class="cfw-item" data-index="4" aria-label="5">
+                                stickers/4.jpg
+                            </button>
+                            <button class="cfw-item" data-index="5" aria-label="6">
+                                stickers/5.jpg
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cfw-controls">
+                        <button class="cfw-btn prev" type="button" aria-label="Anterior">‹</button>
+                        <div class="cfw-dots" role="tablist" aria-label="Selector de imagen">
+                        </div>
+                        <button class="cfw-btn next" type="button" aria-label="Siguiente">›</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--  
         <section id="promesa" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div
                 class="rounded-2xl border border-violet-200 bg-gradient-to-r from-white via-rose-50 to-fuchsia-50 p-6 sm:p-8">
@@ -165,37 +218,81 @@
                 </p>
             </div>
         </section>
- -->
-
+-->
         <section id="mensajes" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div class="text-center mb-6">
                 <h3 class="text-2xl font-semibold text-slate-900">Notas al azar</h3>
-                <p class="text-slate-600 mt-1">Tu namas puchale</p>
+                <p class="text-slate-600 mt-1">Tú nomás puchale</p>
             </div>
 
             <div class="rounded-2xl bg-white border border-fuchsia-200 p-6 sm:p-8 text-center">
-                <div id="mensajeBonito" class="text-lg sm:text-xl text-slate-800 min-h-[3rem]">
-                    Ingaturoña 💟
+                <div class="flex flex-col items-center justify-center gap-3">
+
+                    <img id="stickerImg" class="sticker hidden" alt="Sticker del mensaje" />
+  
+                    <div id="mensajeBonito" aria-live="polite" class="text-lg sm:text-xl text-slate-800 min-h-[3rem]">
+                        Ingaturoña 💟
+                    </div>
                 </div>
                 <div class="mt-6 flex items-center justify-center gap-3">
                     <button id="btnMensaje" class="btn-primary" type="button">Mostrar otro</button>
-                    <button id="btnConfeti2" class="btn-outline" type="button">Aver puchale aqui</button>
+                    <button id="btnConfeti2" class="btn-outline fx-btn" type="button" aria-label="Lanzar confeti">
+                        A ver, puchale aquí
+                    </button>
                 </div>
             </div>
         </section>
 
+        <section id="musica" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="music-card rounded-2xl p-6 sm:p-8 border border-rose-200 bg-white/80 backdrop-blur">
 
-        <section id="musica" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="rounded-2xl p-6 sm:p-8 border border-rose-200 bg-white">
-                <h3 class="text-xl sm:text-2xl font-semibold text-slate-900"></h3>
-                <div>
-                                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2QUlMbvD9bL8wHqfsoqoet?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <!-- Header (título + eq al lado) -->
+                <div class="flex items-start justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="vinyl-icon inline-flex h-10 w-10 items-center justify-center rounded-full text-xl">🎵</span>
 
+                        <!-- Bloque título -->
+                        <div class="flex flex-col">
+                            <div class="flex items-center gap-3 flex-wrap">
+                                <h3 class="text-xl sm:text-2xl font-semibold text-slate-900">Una canción</h3>
+
+                                <!-- Ecualizador a lado del título -->
+                                <div class="eq flex items-end gap-1 h-6" aria-hidden="true">
+                                    <span class="bar" style="--d:0"></span>
+                                    <span class="bar" style="--d:0.1s"></span>
+                                    <span class="bar" style="--d:0.2s"></span>
+                                    <span class="bar" style="--d:0.3s"></span>
+                                    <span class="bar" style="--d:0.4s"></span>
+                                    <span class="bar" style="--d:0.5s"></span>
+                                </div>
+                            </div>
+
+                            <p class="text-sm text-slate-600 mt-1">Que siento que expresa como me siento ahora contigo
+                            </p>
+                        </div>
+                    </div>
+
+                    <span class="chip">Para ti</span>
                 </div>
+
+                <!-- Iframe centrado y destacado -->
+                <div class="mt-8 flex justify-center">
+                    <div class="spotify-embed rounded-xl overflow-hidden shadow-soft w-full max-w-md">
+                        <iframe title="Reproductor de Spotify" style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/2QUlMbvD9bL8wHqfsoqoet?utm_source=generator&theme=0"
+                            width="100%" height="352" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- Sección Daisuki (extra, minimal) -->
+
+
         <section class="text-center mt-6 px-4">
             <h3
                 class="text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-violet-600">
@@ -207,7 +304,6 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="border-top mt-12">
         <div
             class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -218,10 +314,7 @@
         </div>
     </footer>
 
-    <!-- JS -->
     <script src="app.js"></script>
 </body>
 
 </html>
-
-
